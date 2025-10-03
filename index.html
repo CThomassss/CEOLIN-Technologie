@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEOLIN Thomas | Expert Cybersécurité & Développement Web</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="dist/css/custom.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                fontFamily: {
+                    'Montserrat': ['Montserrat'],
+                    'Noto-Sans': ['"Noto Sans"']
+                }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="top" class="font-Noto-Sans">
+    <!-- Navigation -->
+    <nav class="bg-white/95 border-gray-400 py-3 md:py-5 w-full fixed z-40 top-0 duration-500" id="menu-nav">
+        <div class="container px-4 md:px-20 flex flex-wrap justify-between items-center mx-auto">
+            <a href="#top" class="flex items-center text-2xl font-semibold text-gray-700">
+                <!-- <img src="" class="mr-3 h-6 sm:h-9" alt="Logo"> -->
+                <span class="md:hidden">CEOLIN.</span>
+                <span class="hidden md:block">CEOLIN Technologies.</span>
+            </a>
+
+            <button type="button" data-collapse-toggle="mobile-menu" class="inline-flex items-center p-2 ml-3 text-sm text-gray-200 rounded lg:hidden hover:bg-gray-500 mobile-menu-button">
+                <span class="sr-only">Open main menu</span>
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="hidden w-full lg:block lg:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 lg:flex-row lg:space-x-8 lg:mt-0 text-base font-medium">
+                    <li>
+                        <a href="#top" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">À propos</a>
+                    </li>
+                    <li>
+                        <a href="#commitment" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 hover:text-yellow-400 md:px-3 md:py-2 rounded-full">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="w-full h-screen">
+        <div class="container h-full mx-auto p-5 md:p-20 pb-10 pt-24">
+            <div class="w-full h-full md:mt-5 rounded-2xl bg-[url('assets/img/Image11.jpg')] bg-cover bg-center lg:bg-top flex">
+                <div class="my-auto py-10 px-5 md:px-10 lg:px-20">
+                    <h1 class="font-bold uppercase font-Montserrat tracking-wider text-6xl lg:text-8xl mb-4 text-white drop-shadow-2xl">Thomas </h1>
+                    <h1 class="font-bold uppercase font-Montserrat tracking-wider text-5xl lg:text-6xl mb-4 text-gray-900 drop-shadow-2xl bg-white/90 px-4 py-2 rounded-lg inline-block">CEOLIN</h1>
+                    <div class="w-20 h-2 bg-gray-900 mb-4 ml-1 shadow-lg"></div>
+                    <p class="italic font-semibold text-lg mb-10 ml-1 text-white drop-shadow-2xl bg-gray-900/80 px-4 py-2 rounded-lg inline-block">Expert Cybersécurité & Développement Web</p>
+
+                    <div class="container text-center flex">
+                        <ul class="flex content-center gap-5">        
+                            <li>
+                              <a href="https://www.instagram.com/thomas.clnn/" class="transition-transform hover:scale-110">
+                                <span class="fa-stack text-white drop-shadow-lg">
+                                  <i class="fas fa-circle fa-stack-2x text-gray-900"></i>
+                                  <i class="fab fa-instagram fa-stack-1x text-white"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                            <li>
+                              <a href="https://www.linkedin.com/in/thomasceolinn/" class="transition-transform hover:scale-110">
+                                <span class="fa-stack text-white drop-shadow-lg">
+                                  <i class="fas fa-circle fa-stack-2x text-gray-900"></i>
+                                  <i class="fab fa-linkedin-in fa-stack-1x text-white"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                            <li>
+                              <a href="https://github.com/CThomassss" class="transition-transform hover:scale-110">
+                                <span class="fa-stack text-white drop-shadow-lg">
+                                  <i class="fas fa-circle fa-stack-2x text-gray-900"></i>
+                                  <i class="fab fa-github fa-stack-1x text-white"></i>
+                                </span>
+                              </a>
+                            </li>
+                    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-10 md:py-20">      
+        <div class="container mx-auto px-0 lg:px-20">
+            <div class="section-divider px-5 md:px-20">
+                <p class="font-bold text-lg text-gray-600 tracking-wider md:ml-1">À propos de moi.</p>
+            </div>
+
+            <div class="lg:flex">
+              <div class="w-full lg:w-3/5">
+                  <div class="pb-10 px-5 md:px-20 text-black">                      
+                      <h2 class="font-bold uppercase font-Montserrat tracking-wider text-3xl mb-4">CEOLIN Technologies</h1>
+                      <h2 class="font-bold uppercase font-Montserrat tracking-wider text-slate-800 text-3xl mb-4">Étudiant en <span class="text-yellow-400">BUT Informatique</span> et futur <span class="text-yellow-400">expert cybersécurité</span></h1>
+  
+                      <div class="w-20 h-2 bg-slate-800 mb-10 ml-1"></div>
+  
+                      <p class="font-light text-black text-lg ml-1">Bonjour ! Je suis Thomas CEOLIN, 19 ans, étudiant passionné en BUT Informatique option DACS. J'ai fondé CEOLIN Technologies avec une vision claire : créer une entreprise dans le développement web pour financer ma spécialisation en cybersécurité. Mon objectif à moyen terme est de devenir une référence locale en audit de sécurité et pentesting pour les PME.</p>
+                  </div>
+              </div>
+  
+              <div class="w-full lg:w-2/5">
+                  <div class="w-full pb-10 px-5 md:px-20 text-gray-500">
+                      <p class="font-semibold text-xl font-Montserrat ml-1">Développement Web</p>
+                      <p class="font-Noto-Sans text-sm font-normal text-black italic tracking-wide mb-4 ml-1">HTML, CSS, JavaScript, PHP, MySQL</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 90%"></div>
+                      </div>
+  
+                      <p class="font-semibold text-xl font-Montserrat ml-1">Cybersécurité</p>
+                      <p class="font-Noto-Sans text-sm font-normal text-black italic tracking-wide mb-4 ml-1">LDAP, API, JWT, CORS, Sécurisation web</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 75%"></div>
+                      </div>
+  
+                      <p class="font-semibold text-xl font-Montserrat ml-1">Systèmes & Gestion</p>
+                      <p class="font-Noto-Sans text-sm font-normal text-black italic tracking-wide mb-4 ml-1">Linux (Fedora), Windows, Trello, Méthode Agile</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 85%"></div>
+                      </div>                    
+  
+                      <p class="font-semibold text-xl font-Montserrat ml-1 mb-4">Entrepreneuriat</p>
+  
+                      <div class="w-full bg-gray-200 rounded-full h-2 mb-10">
+                        <div class="bg-slate-600 h-2 rounded-full" style="width: 80%"></div>
+                      </div> 
+                  </div>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Commitment -->
+    <section id="commitment" class="pb-10 md:pb-20">      
+        <div class="container mx-auto px-0 lg:px-20">
+            <div class="section-divider px-5 md:px-20">
+                <p class="font-bold text-lg text-gray-600 tracking-wider md:ml-1">Mes services.</p>
+            </div>
+
+            <div class="lg:flex px-5 md:px-20 gap-5 items-stretch">
+              <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+                <div class="rounded-xl h-80 lg:h-full min-h-[400px] bg-[url('assets/img/Image_2.png')] bg-cover bg-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-slate-900/40 flex items-center justify-center">
+                    </div>
+                  </div>
+              </div>
+
+              <div class="w-full lg:w-1/2 flex items-center">
+                  <div class="py-10 lg:px-5 text-black w-full">    
+                    <h2 class="font-bold uppercase font-Montserrat tracking-wider text-slate-800 text-3xl mb-4"><span class="text-yellow-400">CEOLIN Technologies</span> : des <span class="text-yellow-400">solutions sécurisées</span></h1>
+  
+                    <div class="w-20 h-2 bg-slate-800 mb-10 ml-1"></div>
+
+                    <p class="font-light text-black text-lg ml-1"><strong>CEOLIN Technologies</strong> propose une approche unique qui combine développement web moderne et sécurité informatique. Nous créons des sites web performants tout en appliquant les meilleures pratiques de cybersécurité. Notre objectif : vous accompagner dans votre transformation numérique avec des solutions fiables, sécurisées et innovantes.</p>
+                  </div>
+              </div>  
+            </div>            
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-10 md:py-20">      
+        <div class="container mx-auto px-0 lg:px-20">
+            <div class="section-divider-animated px-5 md:px-20">
+                <p class="font-bold text-lg text-gray-600 tracking-wider md:ml-1">Mes réalisations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-5 md:px-20 gap-5">
+              <a data-modal-toggle="portfolioModal1">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/SasDallies.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">   
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Developpement web SAS Dallies</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal2">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/AsProService.webp')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">    
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">As Pro Services</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal3">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/Infrastructure_Reseaux.jpeg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">  
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Infrastructure Réseaux IUT Informatique</h1>
+                      </div>
+                    </div>
+                </div>
+              </a> 
+
+              <a data-modal-toggle="portfolioModal4">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/InstallationdeServicesRéseaux.webp')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">   
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">Installation de Services Réseaux</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal5">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/Production.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">    
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">En Cours...</h1>
+                      </div>
+                    </div>
+                </div>
+              </a>
+
+              <a data-modal-toggle="portfolioModal6">
+                <div class="rounded-xl h-60 bg-[url('assets/img/portfolio/Production.jpg')] bg-cover bg-center transition transform hover:-translate-y-2 ease-in-out duration-300">
+                    <div class="h-full py-10 px-5 text-white drop-shadow-lg">  
+                      <div class="absolute bottom-5">
+                        <div class="w-20 h-2 bg-slate-800 mb-2"></div>
+                        <h1 class="font-semibold text-xl font-Montserrat">En Cours...</h1>
+                      </div>
+                    </div>
+                </div>
+              </a> 
+            </div>            
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="pb-10 md:pb-20">
+        <div class="container h-full mx-auto px-0 lg:px-20 pb-10 pt-24">
+          <div class="section-divider px-5 md:px-20">
+              <p class="font-bold text-lg text-gray-600 tracking-wider md:ml-1">Me contacter.</p>
+          </div>
+
+          <div class="px-5 md:px-20 pb-20">
+            <div class="container text-center flex mb-20">
+              <ul class="flex content-center gap-5 text-gray-50">        
+                  <li>
+                    <a href="https://www.instagram.com/thomas.clnn/" class="transition-transform hover:scale-110">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+                  <li>
+                    <a href="https://www.linkedin.com/in/thomasceolinn/" class="transition-transform hover:scale-110">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+                  <li>
+                    <a href="https://github.com/CThomassss" class="transition-transform hover:scale-110">
+                      <span class="fa-stack text-slate-800">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+          
+              </ul>
+            </div>
+
+            <form class="grid grid-cols-2 gap-5 text-lg">
+              <div class="col-span-2 md:col-span-1">
+                <input type="text" name="name" id="name" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Votre nom *" required>
+              </div>
+
+              <div class="col-span-2 md:col-span-1">
+                <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Votre email *" required>
+              </div>
+
+              <div class="col-span-2 md:col-span-1">
+                <input type="tel" name="phone" id="phone" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Téléphone (optionnel)">
+              </div>
+
+              <div class="col-span-2 md:col-span-1">
+                <input type="text" name="subject" id="subject" class="bg-gray-50 border border-gray-100 rounded-full focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Sujet (optionnel)">
+              </div>
+
+              <div class="col-span-2">
+                <textarea name="message" id="message" rows="5" class="bg-gray-50 border border-gray-100 text-base rounded-2xl focus:ring-yellow-400 focus:border-yellow-400 block w-full p-2.5 pl-7" placeholder="Votre message *" required></textarea>
+              </div>
+              
+              
+              <button type="button" class="text-white hover:text-slate-800 font-semibold bg-slate-800 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-lg w-full sm:w-auto px-5 py-2.5 text-center col-span-2" onclick="sendMessage()">Envoyer le message</button>
+            </form>
+            
+            <div id="emailResponse"></div>
+          </div>
+
+
+          <div class="px-5 md:px-20 lg:px-0">
+            <div class="w-full h-full rounded-2xl bg-[url('assets/img/ImageFin.jpg')] bg-cover bg-center p-5 md:p-10 lg:p-20 mt-20">
+              <h2 class="font-bold uppercase font-Montserrat tracking-wider text-white drop-shadow-lg text-3xl mb-4">Prêt à <span class="text-yellow-400">commencer</span> ?</h1>
+              <h2 class="font-bold uppercase font-Montserrat tracking-wider text-white drop-shadow-lg text-3xl mb-4">Discutons de votre <span class="text-yellow-400">projet </span>numérique <span class="text-yellow-400">sécurisé</span></h1>
+              <div class="w-20 h-2 bg-slate-800"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="w-full py-12 bg-slate-100">
+      <div class="container">
+        <div class="w-full md:w-4/5 mx-auto block md:flex justify-between">
+          <p class="text-sm text-gray-500 text-center mt-5">Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">CEOLIN Technologies</a>.&nbsp; Tous droits réservés.</p>
+          <div class="block md:flex md:justify-end text-center md:text-right text-sm text-gray-500 gap-5 mt-5">
+            <a href="/politique-confidentialite.html" class="px-3 md:px-0">Politique de confidentialité</a>
+            <a href="/mentions-legales.html" class="px-3 md:px-0">Conditions d'utilisation</a>
+          </div>        
+        </div>
+      </div>
+    </footer>
+
+
+
+    
+
+    <!-- Portfolio modal 1 -->
+    <div id="portfolioModal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold font-Montserrat text-gray-900">
+                        SAS Dallies - Nettoyage Panneaux Solaires
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal1">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                
+                <img src="assets/img/portfolio/SasDallies.jpg" class="w-full rounded-lg shadow-lg"/>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <i class="fas fa-calendar-alt text-yellow-500"></i>
+                        <span>Projet réalisé en 2024</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-code text-yellow-500"></i>
+                        <span>HTML, CSS, JavaScript, PHP</span>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Mission & Objectifs</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Création d'un site web professionnel pour SAS Dallies, entreprise spécialisée dans le nettoyage et la maintenance de panneaux solaires. L'objectif était de développer une présence digitale moderne pour attirer de nouveaux clients et présenter leurs services de manière professionnelle.
+                    </p>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Réalisations Techniques</h4>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Design responsive adapté mobile et desktop</li>
+                        <li>Système de devis en ligne sécurisé</li>
+                        <li>Optimisation SEO pour le référencement local</li>
+                        <li>Intégration Google Maps et formulaire de contact</li>
+                        <li>Gallery photos avant/après des interventions</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Résultats</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Site web fonctionnel et professionnel qui a permis à l'entreprise d'augmenter sa visibilité en ligne et de recevoir de nouvelles demandes de devis. Interface intuitive facilitant la prise de contact avec les clients potentiels.
+                    </p>
+                    
+                    <div class="flex gap-3 pt-4">
+                        <a href="https://sasdallies.com/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 flex items-center gap-2">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir le site web
+                        </a>
+                        <span class="bg-gray-100 text-gray-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-solar-panel text-yellow-500"></i>
+                            Énergie Renouvelable
+                        </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 2 -->
+    <div id="portfolioModal2" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold font-Montserrat text-gray-900">
+                        AS Pro Services - Outillage Professionnel
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal2">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                
+                <img src="assets/img/portfolio/AsProService.webp" class="w-full rounded-lg shadow-lg"/>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <i class="fas fa-calendar-alt text-yellow-500"></i>
+                        <span>Projet réalisé en 2024</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-code text-yellow-500"></i>
+                        <span>HTML, CSS, JavaScript, PHP, MySQL</span>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Mission & Objectifs</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Développement d'une plateforme web complète pour AS Pro Services, entreprise spécialisée dans la vente et location d'outillage professionnel. L'objectif était de créer un site vitrine moderne avec catalogue produits et système de demande de devis intégré.
+                    </p>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Fonctionnalités Développées</h4>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Catalogue produits avec système de recherche avancée</li>
+                        <li>Interface d'administration pour gestion du stock</li>
+                        <li>Système de demande de devis automatisé</li>
+                        <li>Optimisation mobile et tablette</li>
+                        <li>Intégration sécurisée avec base de données MySQL</li>
+                        <li>Système de contact et suivi client</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Technologies & Sécurité</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Site développé avec les meilleures pratiques de sécurité web : protection CSRF, validation côté serveur, chiffrement des données sensibles. Architecture responsive et optimisée pour les performances avec temps de chargement réduit.
+                    </p>
+                    
+                    <div class="flex gap-3 pt-4">
+                        <a href="https://asproservices.fr/" target="_blank" class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-6 rounded-lg transition duration-300 flex items-center gap-2">
+                            <i class="fas fa-external-link-alt"></i>
+                            Voir le site web
+                        </a>
+                        <span class="bg-gray-100 text-gray-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-tools text-yellow-500"></i>
+                            Outillage Pro
+                        </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 3 -->
+    <div id="portfolioModal3" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold font-Montserrat text-gray-900">
+                        Infrastructure Réseaux - IUT Informatique
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal3">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                
+                <img src="assets/img/portfolio/Infrastructure_Reseaux.jpeg" class="w-full rounded-lg shadow-lg"/>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <i class="fas fa-graduation-cap text-yellow-500"></i>
+                        <span>Projet académique - BUT Informatique</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-network-wired text-yellow-500"></i>
+                        <span>Cisco, Linux, Windows Server</span>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Contexte & Objectifs</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Projet de conception et déploiement d'une infrastructure réseau complète dans le cadre de ma formation en BUT Informatique. L'objectif était de créer une architecture réseau sécurisée et performante pour une entreprise fictive de 200 employés.
+                    </p>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Réalisations Techniques</h4>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Configuration de switchs et routeurs Cisco (VLAN, VTP, STP)</li>
+                        <li>Mise en place de protocoles de routage (OSPF, EIGRP)</li>
+                        <li>Sécurisation avec ACL et pare-feu pfSense</li>
+                        <li>Déploiement de serveurs Windows Server 2019 et Linux</li>
+                        <li>Configuration DNS, DHCP et Active Directory</li>
+                        <li>Monitoring réseau avec PRTG et Nagios</li>
+                    </ul>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Compétences Développées</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Sécurité Réseau</h5>
+                            <p class="text-sm text-gray-600">Pare-feu, VPN, chiffrement</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Administration</h5>
+                            <p class="text-sm text-gray-600">Windows Server, Linux</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Monitoring</h5>
+                            <p class="text-sm text-gray-600">Supervision, métriques</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Documentation</h5>
+                            <p class="text-sm text-gray-600">Schémas, procédures</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-3 pt-4">
+                        <span class="bg-blue-100 text-blue-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-university text-blue-500"></i>
+                            Projet Académique
+                        </span>
+                        <span class="bg-green-100 text-green-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-shield-alt text-green-500"></i>
+                            Infrastructure Sécurisée
+                        </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 4 -->
+    <div id="portfolioModal4" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold font-Montserrat text-gray-900">
+                        Installation Services Réseaux
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal4">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                
+                <img src="assets/img/portfolio/InstallationdeServicesRéseaux.webp" class="w-full rounded-lg shadow-lg"/>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <i class="fas fa-graduation-cap text-yellow-500"></i>
+                        <span>Formation BUT Informatique</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-server text-yellow-500"></i>
+                        <span>Apache, MySQL, DNS, DHCP</span>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Contexte du Projet</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Projet pratique de déploiement et configuration de services réseau essentiels dans un environnement d'entreprise simulé. L'objectif était de maîtriser l'installation et la sécurisation de services critiques pour le fonctionnement d'une infrastructure IT.
+                    </p>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Services Déployés</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                            <h5 class="font-semibold text-blue-800 flex items-center gap-2">
+                                <i class="fas fa-server"></i>
+                                Serveur Web Apache
+                            </h5>
+                            <p class="text-blue-700 text-sm mt-1">Configuration SSL, virtual hosts, sécurisation</p>
+                        </div>
+                        
+                        <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-400">
+                            <h5 class="font-semibold text-green-800 flex items-center gap-2">
+                                <i class="fas fa-database"></i>
+                                Base MySQL
+                            </h5>
+                            <p class="text-green-700 text-sm mt-1">Installation, optimisation, sauvegarde</p>
+                        </div>
+                        
+                        <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-400">
+                            <h5 class="font-semibold text-purple-800 flex items-center gap-2">
+                                <i class="fas fa-globe"></i>
+                                Serveur DNS
+                            </h5>
+                            <p class="text-purple-700 text-sm mt-1">Résolution de noms, zones DNS</p>
+                        </div>
+                        
+                        <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-400">
+                            <h5 class="font-semibold text-orange-800 flex items-center gap-2">
+                                <i class="fas fa-network-wired"></i>
+                                Service DHCP
+                            </h5>
+                            <p class="text-orange-700 text-sm mt-1">Attribution IP automatique, réservations</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Sécurisation & Documentation</h4>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                        <li>Configuration de certificats SSL/TLS</li>
+                        <li>Mise en place de pare-feu iptables</li>
+                        <li>Monitoring et logs de sécurité</li>
+                        <li>Documentation technique complète</li>
+                        <li>Procédures de sauvegarde et restauration</li>
+                    </ul>
+                    
+                    <div class="flex gap-3 pt-4">
+                        <span class="bg-blue-100 text-blue-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-cogs text-blue-500"></i>
+                            Administration Système
+                        </span>
+                        <span class="bg-red-100 text-red-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-lock text-red-500"></i>
+                            Sécurisation Avancée
+                        </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 5 -->
+    <div id="portfolioModal5" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold font-Montserrat text-gray-900">
+                        Application Web Sécurisée - En Développement
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal5">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                
+                <div class="relative">
+                    <img src="assets/img/portfolio/Production.jpg" class="w-full rounded-lg shadow-lg"/>
+                    <div class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        <i class="fas fa-code-branch mr-1"></i>
+                        En Cours
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <i class="fas fa-calendar-alt text-yellow-500"></i>
+                        <span>Démarré en Octobre 2025</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-code text-yellow-500"></i>
+                        <span>PHP 8, MySQL, JWT, AES-256</span>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Vision du Projet</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Développement d'une application web moderne axée sur la sécurité, intégrant les dernières technologies et bonnes pratiques de cybersécurité. Ce projet vise à démontrer mes compétences en développement sécurisé et à créer une solution robuste pour les entreprises.
+                    </p>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Fonctionnalités Prévues</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h5 class="font-medium text-gray-800">Authentification Multi-Facteurs (MFA)</h5>
+                                <p class="text-sm text-gray-600">TOTP, SMS, clés de sécurité FIDO2</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h5 class="font-medium text-gray-800">API REST Sécurisée</h5>
+                                <p class="text-sm text-gray-600">JWT, rate limiting, validation stricte</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h5 class="font-medium text-gray-800">Chiffrement Avancé</h5>
+                                <p class="text-sm text-gray-600">AES-256, hachage bcrypt, HSM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-3">
+                            <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <div>
+                                <h5 class="font-medium text-gray-800">Audit & Monitoring</h5>
+                                <p class="text-sm text-gray-600">Logs sécurisés, alertes temps réel</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Technologies & Standards</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-blue-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-blue-800">Backend</h5>
+                            <p class="text-sm text-blue-600">PHP 8.2, Symfony</p>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-green-800">Database</h5>
+                            <p class="text-sm text-green-600">MySQL 8.0, Redis</p>
+                        </div>
+                        <div class="bg-purple-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-purple-800">Sécurité</h5>
+                            <p class="text-sm text-purple-600">OWASP Top 10, CSP</p>
+                        </div>
+                        <div class="bg-orange-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-orange-800">Frontend</h5>
+                            <p class="text-sm text-orange-600">Vue.js 3, TypeScript</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-info-circle text-yellow-600"></i>
+                            <h5 class="font-semibold text-yellow-800">Avancement du Projet</h5>
+                        </div>
+                        <p class="text-yellow-700 text-sm mt-2">
+                            Architecture définie • Phase de développement en cours • Livraison prévue Q1 2026
+                        </p>
+                    </div>
+                    
+                    <div class="flex gap-3 pt-4">
+                        <span class="bg-yellow-100 text-yellow-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-rocket text-yellow-500"></i>
+                            Innovation
+                        </span>
+                        <span class="bg-red-100 text-red-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-shield-alt text-red-500"></i>
+                            Cybersécurité
+                        </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Portfolio modal 6 -->
+    <div id="portfolioModal6" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
+      <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+          <div class="relative bg-white rounded-xl shadow">
+            <div class="p-6 space-y-6">
+                <div class="flex justify-between items-start">
+                    <h3 class="text-2xl font-bold font-Montserrat text-gray-900">
+                        Plateforme Audit Cybersécurité - Vision 2026
+                    </h3>
+                    <button type="button" class="text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-full text-lg p-1.5 ml-auto inline-flex items-center" data-modal-toggle="portfolioModal6">
+                        <i class="fas fa-xmark"></i>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                
+                <div class="relative">
+                    <img src="assets/img/portfolio/Production.jpg" class="w-full rounded-lg shadow-lg"/>
+                    <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                        <i class="fas fa-eye mr-1"></i>
+                        Projet Futur
+                    </div>
+                </div>
+                
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2 text-sm text-gray-600">
+                        <i class="fas fa-calendar-alt text-yellow-500"></i>
+                        <span>Lancement prévu 2025-2026</span>
+                        <span class="mx-2">•</span>
+                        <i class="fas fa-shield-alt text-yellow-500"></i>
+                        <span>Audit & Pentesting PME</span>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Objectif Stratégique</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        Développement d'une plateforme complète d'audit de sécurité et de pentesting spécialement conçue pour les PME locales. Ce projet représente l'évolution naturelle de CEOLIN Technologies vers la cybersécurité, s'appuyant sur ma spécialisation BUT Informatique DACS.
+                    </p>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Services Prévus</h4>
+                    <div class="space-y-3">
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded">
+                            <h5 class="font-semibold text-red-800 flex items-center gap-2">
+                                <i class="fas fa-search"></i>
+                                Audit de Vulnérabilités
+                            </h5>
+                            <p class="text-red-700 text-sm mt-1">Scan automatisé + analyse manuelle approfondie</p>
+                        </div>
+                        
+                        <div class="bg-orange-50 border-l-4 border-orange-400 p-4 rounded">
+                            <h5 class="font-semibold text-orange-800 flex items-center gap-2">
+                                <i class="fas fa-bug"></i>
+                                Tests d'Intrusion
+                            </h5>
+                            <p class="text-orange-700 text-sm mt-1">Pentesting applications web, réseaux et infrastructure</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                            <h5 class="font-semibold text-blue-800 flex items-center gap-2">
+                                <i class="fas fa-chart-line"></i>
+                                Rapports Automatisés
+                            </h5>
+                            <p class="text-blue-700 text-sm mt-1">Dashboard temps réel avec recommandations priorisées</p>
+                        </div>
+                        
+                        <div class="bg-green-50 border-l-4 border-green-400 p-4 rounded">
+                            <h5 class="font-semibold text-green-800 flex items-center gap-2">
+                                <i class="fas fa-graduation-cap"></i>
+                                Formation Sécurité
+                            </h5>
+                            <p class="text-green-700 text-sm mt-1">Sensibilisation équipes et formation dirigeants</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Technologies & Outils</h4>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Scan & Détection</h5>
+                            <p class="text-sm text-gray-600">Nmap, Nessus, OpenVAS</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Pentesting</h5>
+                            <p class="text-sm text-gray-600">Metasploit, Burp Suite</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">OSINT</h5>
+                            <p class="text-sm text-gray-600">Maltego, Shodan, TheHarvester</p>
+                        </div>
+                        <div class="bg-gray-50 p-3 rounded-lg">
+                            <h5 class="font-medium text-gray-800">Reporting</h5>
+                            <p class="text-sm text-gray-600">Python, LaTeX, API</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg text-gray-800">Marché Cible</h4>
+                    <p class="text-gray-700 leading-relaxed">
+                        <strong>PME locales de 10-50 employés</strong> : Entreprises ayant une présence numérique croissante mais des ressources limitées pour la cybersécurité. Services abordables et adaptés aux budgets des petites structures.
+                    </p>
+                    
+                    <div class="bg-blue-50 border border-blue-200 p-4 rounded-lg">
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-roadmap text-blue-600"></i>
+                            <h5 class="font-semibold text-blue-800">Roadmap de Développement</h5>
+                        </div>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span><strong>2025 :</strong> Certification éthique hacker, outils de base</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                <span><strong>2026 :</strong> Plateforme MVP, premiers clients pilotes</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                                <span><strong>2027 :</strong> Expansion régionale, partenariats</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex gap-3 pt-4">
+                        <span class="bg-red-100 text-red-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-crosshairs text-red-500"></i>
+                            Pentesting
+                        </span>
+                        <span class="bg-blue-100 text-blue-700 font-medium py-2 px-4 rounded-lg flex items-center gap-2">
+                            <i class="fas fa-building text-blue-500"></i>
+                            PME Focus
+                        </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="dist/js/tw-portfolio.js"></script>
+    <script src="dist/js/send-message.js"></script>
+</body>
+</html>

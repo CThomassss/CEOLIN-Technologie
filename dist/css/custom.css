@@ -1,0 +1,232 @@
+/* Styles personnalisés pour le portfolio CEOLIN Technologies */
+
+/* ========================================
+   LIGNES DÉCORATIVES DES SECTIONS
+   ======================================== */
+
+/* Conteneur principal pour la ligne décorative statique */
+.section-divider {
+    margin-bottom: 3rem;       /* Espace de 48px sous la section */
+    padding-bottom: 1rem;      /* Espace de 16px à l'intérieur de la section */
+}
+
+/* Petite ligne sous le titre uniquement */
+.section-divider p::after {
+    content: '';               /* Créé un élément pour la ligne */
+    display: block;            /* Affichage en bloc pour être sous le texte */
+    margin-top: 8px;          /* Espace de 8px entre le texte et la ligne */
+    width: 60px;              /* Largeur courte de 60px (juste sous le texte) */
+    height: 2px;              /* Épaisseur de 2px */
+    background: #000;         /* Couleur noire */
+}
+
+/* ========================================
+   SÉPARATEUR ANIMÉ (Version Portfolio)
+   ======================================== */
+
+/* Conteneur pour la ligne décorative avec animation */
+.section-divider-animated {
+    margin-bottom: 3rem;       /* Même espacement */
+    padding-bottom: 1rem;      /* Même espacement interne */
+}
+
+/* Petite ligne sous le titre (version portfolio) */
+.section-divider-animated p::after {
+    content: '';               /* Créé un élément pour la ligne */
+    display: block;            /* Affichage en bloc pour être sous le texte */
+    margin-top: 8px;          /* Espace de 8px entre le texte et la ligne */
+    width: 60px;              /* Largeur courte de 60px (juste sous le texte) */
+    height: 2px;              /* Épaisseur de 2px */
+    background: #000;         /* Couleur noire */
+}
+
+/* ========================================
+   ANIMATIONS D'APPARITION
+   ======================================== */
+
+/* Animation d'apparition en fondu */
+.fade-in {
+    animation: fadeIn 0.6s ease-in;  /* Durée : 0.6 seconde, accélération progressive */
+}
+
+/* Définition de l'animation fadeIn */
+@keyframes fadeIn {
+    from { 
+        opacity: 0;                    /* Début : invisible (transparence totale) */
+        transform: translateY(20px);   /* Début : décalé de 20px vers le bas */
+    }
+    to { 
+        opacity: 1;                    /* Fin : totalement visible */
+        transform: translateY(0);      /* Fin : position normale */
+    }
+    /* Résultat : L'élément apparaît en remontant avec un effet de fondu */
+}
+
+/* ========================================
+   EFFETS DE SURVOL PORTFOLIO
+   ======================================== */
+
+/* Style de base pour les éléments du portfolio */
+.portfolio-item {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Transition fluide de 0.3s avec courbe d'accélération personnalisée */
+    /* cubic-bezier : courbe d'animation plus naturelle que "ease" */
+}
+
+/* Effet au survol de la souris */
+.portfolio-item:hover {
+    transform: translateY(-8px);      /* Soulève l'élément de 8px vers le haut */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    /* Ombre portée complexe : ombre principale + ombre secondaire pour plus de réalisme */
+}
+
+
+/* ========================================
+   FORMULAIRES ET NAVIGATION
+   ======================================== */
+
+/* Style quand l'utilisateur clique dans un champ */
+input:focus, textarea:focus {
+    outline: none;              /* Supprime le contour bleu par défaut du navigateur */
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+    /* Ajoute un halo doré subtil (couleur CEOLIN avec 10% d'opacité) */
+}
+
+/* Style pour l'onglet actif dans la navigation */
+.nav-active {
+    background-color: rgba(251, 191, 36, 0.1);  /* Fond doré très transparent */
+    color: #f59e0b;                              /* Texte doré plus visible */
+}
+
+/* Animation de chargement */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #ffffff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Arrière-plan dégradé professionnel */
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Effet de survol des cartes */
+.card-hover {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: scale(1.02);
+}
+
+/* Améliorations typographiques */
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles des boutons personnalisés */
+.btn-primary {
+    background: linear-gradient(45deg, #1e293b, #374151);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #f59e0b, #f97316);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   CORRECTIONS MODALES PORTFOLIO
+   ======================================== */
+
+/* Empêcher le scroll du body quand une modale est ouverte */
+body.modal-open {
+    position: fixed !important;
+    width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Ciblage des modales Flowbite */
+[id*="portfolioModal"] {
+    padding: 1rem !important;
+}
+
+/* Container interne de la modale */
+[id*="portfolioModal"] > div {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    min-height: 100vh !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+/* Contenu de la modale avec scroll interne */
+[id*="portfolioModal"] .bg-white {
+    max-height: 80vh !important;
+    overflow-y: auto !important;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 42rem !important;
+}
+
+/* Amélioration du scroll dans les modales */
+[id*="portfolioModal"] .bg-white::-webkit-scrollbar {
+    width: 6px;
+}
+
+[id*="portfolioModal"] .bg-white::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+[id*="portfolioModal"] .bg-white::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+}
+
+[id*="portfolioModal"] .bg-white::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Animation d'apparition des modales */
+.modal-fade-in {
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+    [id*="portfolioModal"] .bg-white {
+        max-height: 85vh !important;
+        max-width: 95vw !important;
+    }
+    
+    [id*="portfolioModal"] > div {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    
+    [id*="portfolioModal"] {
+        padding: 0.5rem !important;
+    }
+}
