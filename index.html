@@ -11,6 +11,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="favicon.png">
 
+    <!-- HEAD: ressources externes & configuration Tailwind -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet"> 
@@ -32,6 +33,82 @@
                 }
             }
         }
+    </script>
+
+    <!-- SEO: description, keywords, canonical, Open Graph, Twitter, geo, robots, author -->
+    <meta name="description" content="Thomas Ceolin — CEOLIN Technologies | Expert en cybersécurité & développement web. Services : audit sécurité, pentesting, développement de sites et applications sécurisées. Basé à Toulouse et ses alentours (Haute-Garonne, Occitanie).">
+    <meta name="keywords" content="Thomas Ceolin, CEOLIN Technologies, cybersécurité Toulouse, pentesting Toulouse, audit sécurité Toulouse, développement web Toulouse, PHP, MySQL, pentest PME, BUT Informatique">
+    <meta name="author" content="Thomas Ceolin">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ceolin-technologies.fr/">
+    <meta property="og:site_name" content="CEOLIN Technologies">
+    <meta property="og:title" content="Thomas Ceolin — Expert Cybersécurité & Développement Web | Toulouse">
+    <meta property="og:description" content="CEOLIN Technologies (Thomas Ceolin) propose audit de sécurité, pentesting et développement web sécurisé pour PME. Basé à Toulouse et alentours.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ceolin-technologies.fr/">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="https://ceolin-technologies.fr/assets/img/Image11.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thomas Ceolin — Expert Cybersécurité & Développement Web | Toulouse">
+    <meta name="twitter:description" content="Audit sécurité, pentesting et développement web sécurisé — CEOLIN Technologies (Thomas Ceolin) à Toulouse et alentours.">
+    <meta name="twitter:image" content="https://ceolin-technologies.fr/assets/img/Image11.jpg">
+    <meta name="geo.region" content="FR-31">
+    <meta name="geo.placename" content="Toulouse">
+    <meta name="geo.position" content="43.6045;1.4440">
+    <meta name="ICBM" content="43.6045, 1.4440">
+
+    <!-- JSON-LD LocalBusiness + Person structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "name": "CEOLIN Technologies - Thomas Ceolin",
+          "description": "CEOLIN Technologies propose audit de sécurité, pentesting et développement web sécurisé pour PME. Basé à Toulouse (Haute-Garonne) et alentours.",
+          "url": "https://ceolin-technologies.fr/",
+          "sameAs": [
+            "https://www.instagram.com/thomas.clnn/",
+            "https://www.linkedin.com/in/thomasceolinn/",
+            "https://github.com/CThomassss"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "",
+            "addressLocality": "Toulouse",
+            "postalCode": "31000",
+            "addressRegion": "Occitanie",
+            "addressCountry": "FR"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.6045,
+            "longitude": 1.4440
+          },
+          "areaServed": [
+            "Toulouse",
+            "Haute-Garonne",
+            "Occitanie",
+            "Toulouse et alentours"
+          ],
+          "keywords": "cybersécurité, pentesting, audit sécurité, développement web, PHP, MySQL, Toulouse"
+        },
+        {
+          "@type": "Person",
+          "name": "Thomas Ceolin",
+          "jobTitle": "Expert Cybersécurité & Développement Web",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "CEOLIN Technologies"
+          },
+          "sameAs": [
+            "https://www.instagram.com/thomas.clnn/",
+            "https://www.linkedin.com/in/thomasceolinn/",
+            "https://github.com/CThomassss"
+          ]
+        }
+      ]
+    }
     </script>
 </head>
 
@@ -72,7 +149,7 @@
         </div>
     </nav>
 
-    <!-- Header -->
+    <!-- HEADER / HERO: image de couverture, titre, réseaux sociaux -->
     <header class="w-full h-screen">
         <div class="container h-full mx-auto p-5 md:p-20 pb-10 pt-24">
             <div class="w-full h-full md:mt-5 rounded-2xl bg-[url('assets/img/Image11.jpg')] bg-cover bg-center lg:bg-top flex">
@@ -118,7 +195,7 @@
         </div>
     </header>
 
-    <!-- About -->
+    <!-- SECTION: ABOUT (À propos) - compétences & présentation -->
     <section id="about" class="py-10 md:py-20">      
         <div class="container mx-auto px-0 lg:px-20">
             <div class="section-divider px-5 md:px-20">
@@ -172,7 +249,7 @@
         </div>
     </section>
 
-    <!-- Commitment -->
+    <!-- SECTION: COMMITMENT / SERVICES -->
     <section id="commitment" class="pb-10 md:pb-20">      
         <div class="container mx-auto px-0 lg:px-20">
             <div class="section-divider px-5 md:px-20">
@@ -200,7 +277,7 @@
         </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- SECTION: PORTFOLIO - vignettes et modals -->
     <section id="portfolio" class="py-10 md:py-20">      
         <div class="container mx-auto px-0 lg:px-20">
             <div class="section-divider-animated px-5 md:px-20">
@@ -277,7 +354,7 @@
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- SECTION: CONTACT - formulaire et call-to-action -->
     <section id="contact" class="pb-10 md:pb-20">
         <div class="container h-full mx-auto px-0 lg:px-20 pb-10 pt-24">
           <div class="section-divider px-5 md:px-20">
@@ -357,7 +434,7 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER: liens légaux & copyright -->
     <footer class="w-full py-12 bg-slate-100">
       <div class="container">
         <div class="w-full md:w-4/5 mx-auto block md:flex justify-between">
@@ -372,8 +449,7 @@
 
 
 
-    
-
+    <!-- PORTFOLIO MODALS: modals 1..6 (détails des réalisations) -->
     <!-- Portfolio modal 1 -->
     <div id="portfolioModal1" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center bg-slate-900/60">
       <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
@@ -389,7 +465,7 @@
                     </button>
                 </div>
                 
-                <img src="assets/img/portfolio/SasDallies.jpg" class="w-full rounded-lg shadow-lg"/>
+                <img src="assets/img/portfolio/SasDallies.jpg" alt="SAS Dallies - Présentation projet - CEOLIN Technologies" loading="lazy" class="w-full rounded-lg shadow-lg"/>
                 
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-sm text-gray-600">
@@ -450,7 +526,7 @@
                     </button>
                 </div>
                 
-                <img src="assets/img/portfolio/AsProService.webp" class="w-full rounded-lg shadow-lg"/>
+                <img src="assets/img/portfolio/AsProService.webp" alt="AS Pro Services - Catalogue & Outillage - CEOLIN Technologies" loading="lazy" class="w-full rounded-lg shadow-lg"/>
                 
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-sm text-gray-600">
@@ -512,7 +588,7 @@
                     </button>
                 </div>
                 
-                <img src="assets/img/portfolio/Infrastructure_Reseaux.jpeg" class="w-full rounded-lg shadow-lg"/>
+                <img src="assets/img/portfolio/Infrastructure_Reseaux.jpeg" alt="Infrastructure Réseaux - Projet IUT - CEOLIN Technologies" loading="lazy" class="w-full rounded-lg shadow-lg"/>
                 
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-sm text-gray-600">
@@ -589,7 +665,7 @@
                     </button>
                 </div>
                 
-                <img src="assets/img/portfolio/InstallationdeServicesRéseaux.webp" class="w-full rounded-lg shadow-lg"/>
+                <img src="assets/img/portfolio/InstallationdeServicesRéseaux.webp" alt="Installation Services Réseaux - CEOLIN Technologies" loading="lazy" class="w-full rounded-lg shadow-lg"/>
                 
                 <div class="space-y-4">
                     <div class="flex items-center gap-2 text-sm text-gray-600">
@@ -681,7 +757,7 @@
                 </div>
                 
                 <div class="relative">
-                    <img src="assets/img/portfolio/Production.jpg" class="w-full rounded-lg shadow-lg"/>
+                    <img src="assets/img/portfolio/Production.jpg" alt="Application Web Sécurisée - En développement - CEOLIN Technologies" loading="lazy" class="w-full rounded-lg shadow-lg"/>
                     <div class="absolute top-4 right-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                         <i class="fas fa-code-branch mr-1"></i>
                         En Cours
@@ -799,7 +875,7 @@
                 </div>
                 
                 <div class="relative">
-                    <img src="assets/img/portfolio/Production.jpg" class="w-full rounded-lg shadow-lg"/>
+                    <img src="assets/img/portfolio/Production.jpg" alt="Plateforme Audit Cybersécurité - Vision 2026 - CEOLIN Technologies" loading="lazy" class="w-full rounded-lg shadow-lg"/>
                     <div class="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                         <i class="fas fa-eye mr-1"></i>
                         Projet Futur
@@ -918,6 +994,7 @@
     </div>
 
     
+    <!-- SCRIPTS: Flowbite, EmailJS, JS custom -->
     <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="dist/js/tw-portfolio.js"></script>
